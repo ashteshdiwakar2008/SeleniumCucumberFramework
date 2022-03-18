@@ -1,5 +1,7 @@
 package com.drivers;
 
-public class DriverManager {
+public final class DriverManager {
+	
+	private DriverManager() {}
 
 }
