@@ -9,8 +9,10 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<cucumber-java>7.2.3</cucumber-java>
+		<selenium-java>4.1.1</selenium-java>		
+		<cucumber-java>6.11.0</cucumber-java>
 		<extentreports-version>5.0.9</extentreports-version>
+		<extentreports-cucumber6-adapter>2.1.0</extentreports-cucumber6-adapter>
 		<log4j-version>2.17.1</log4j-version>
 	</properties>
 
@@ -20,7 +22,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.1.2</version>
+			<version>${selenium-java}</version>
 		</dependency>
 
 		<!-- Webdriver Manager dependencies -->
@@ -57,6 +59,13 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber6-adapter</artifactId>
+			<version>${extentreports-cucumber6-adapter}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
