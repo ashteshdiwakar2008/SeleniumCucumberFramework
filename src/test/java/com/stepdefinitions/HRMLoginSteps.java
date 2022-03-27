@@ -10,27 +10,29 @@ import io.cucumber.java.en.When;
 
 public class HRMLoginSteps {
 	
-	HRMLoginPage loginPage = new HRMLoginPage();
-	HRMHomePage homepage = new HRMHomePage();
-	
-	@When("user input username")
-	public void user_input_username() {
-		loginPage.inputUsername("admin");
+	@When("user input username as {string}")
+	public void user_input_username_as(String username) {
+		HRMLoginPage.inputUsername(username);
 	}
 
-	@And("user input password")
-	public void user_input_password() {
-	   loginPage.inputPassword("admin123");
+	@And("user input password as {string}")
+	public void user_input_password_as(String password) {
+	   HRMLoginPage.inputPassword(password);
 	}
 
 	@And("click on login button")
 	public void click_on_login_button() {
-	    loginPage.clickLogin();
+	    HRMLoginPage.clickLogin();
 	}
 
 	@Then("HRM Home Page should be displayed")
 	public void hrm_home_page_should_be_displayed() {
-	    homepage.verifyHomepageTitle();
+	    HRMHomePage.verifyHomePage();
+	}
+	
+	@Then("user should be on Login page")
+	public void user_should_be_on_login_page() {
+	    HRMLoginPage.verifyLoginPage();
 	}
 
 

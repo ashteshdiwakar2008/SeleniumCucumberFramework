@@ -1,7 +1,5 @@
 package com.stepdefinitions;
 
-import com.pages.HRMLoginPage;
-
 import io.cucumber.java.en.Given;
 
 public class CommonSteps {

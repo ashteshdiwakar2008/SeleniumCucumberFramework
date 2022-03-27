@@ -9,10 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = { "src/test/resources/features" }, 
 					glue = { "com.stepdefinitions", "com.hooks" }, 
 					plugin = {
-								"pretty",
-								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
-					publish = true,
-					monochrome = true)
+								"pretty", // default report and console output printing plugin
+								"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },// extent report plugin for cucumber-6
+					publish = true, // if false cucumber report not generated
+					monochrome = false)  // if true then no color in console output
 public class TestRunner {
 
 }

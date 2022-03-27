@@ -3,14 +3,13 @@ package com.utilities;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Properties;
 
 import com.constants.FrameworkConstants;
-
-import io.netty.util.concurrent.ThreadProperties;
 
 public final class PropertyUtils {
 
@@ -35,6 +34,7 @@ public final class PropertyUtils {
 	public static Map<String, String> getPropertyData() {
 
 		if(Objects.isNull(propertyFileData)) {
+			propertyFileData = new HashMap<>();
 			Properties prop = PropertyUtils.readPropertyFile();
 			for(Entry entry : prop.entrySet()) {
 				String key = (String) entry.getKey();

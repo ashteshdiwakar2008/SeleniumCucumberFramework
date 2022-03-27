@@ -9,6 +9,7 @@ public final class FrameworkConstants {
 	private static final String TEST_DATA_FILE_PATH = RESOURCE_PATH + "\\src\\main\\resources\\data\\TestData.xlsx";
 	private static final String EXTENT_REPORT_PATH = RESOURCE_PATH + "\\extent-reports";
 	private static final int EXPLICIT_WAIT_DURATION = 10;
+	private static final int EXPLICIT_WAIT_POLLING_DURATION = 2;
 	
 	/**
 	 * @return the configPropertyPath
@@ -33,6 +34,12 @@ public final class FrameworkConstants {
 	 */
 	public static int getExplicitWaitDuration() {
 		return EXPLICIT_WAIT_DURATION;
+	}
+	/**
+	 * @return the explicitWaitPollingDuration
+	 */
+	public static int getExplicitWaitPollingDuration() {
+		return EXPLICIT_WAIT_POLLING_DURATION;
 	}
 	
 }

@@ -19,21 +19,21 @@ public final class Driver {
 	
 	public static WebDriver driver;
 	
-	public static void initDriver(BrowserType browser) {
+	public static void initDriver(String browser) {
 		
-		if(browser.getValue().equalsIgnoreCase("chrome")) {
+		if(browser.equalsIgnoreCase(BrowserType.CHROME.getValue())) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			DriverManager.setDriver(driver);
-		} else if(browser.getValue().equalsIgnoreCase("firefox")) {
+		} else if(browser.equalsIgnoreCase(BrowserType.FIREFOX.getValue())) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			DriverManager.setDriver(driver);
 		} else {
 			throw new RuntimeException("Incompatible driver selected");
 		}
-		//DriverManager.getDriver().get(PropertyUtils.getPropertyData().get(PropertyConstants.URL.getValue()));
-		DriverManager.getDriver().get("https://opensource-demo.orangehrmlive.com/");
+		DriverManager.getDriver().manage().window().maximize();
+		DriverManager.getDriver().get(PropertyUtils.getPropertyData().get(PropertyConstants.URL.getValue()));
 	}
 	
 	public static void quitDriver() {
