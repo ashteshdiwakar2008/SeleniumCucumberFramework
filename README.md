@@ -19,7 +19,7 @@ This framework is built using all the latest and most popular libraries and with
 
 ## Package structure overview: 
 1. **src/main/java: **  
-    - [ ] com.assertions : Contains a class where all common validation steps can be maintained which will be reflected in reports as well. 
+    - [] com.assertions : Contains a class where all common validation steps can be maintained which will be reflected in reports as well. 
     - [ ] com.constants : Contains a class which can be used to store framework level constant variables for referencing across various levels (viz, wait timeouts, etc).   
     - [ ] com.drivers : Contains classes to manage Web Driver instance and implementation for handling remote execution, parallel execution of tests for WebDriver reference.   
     - [ ] com.enums : Conatains various enums (For static value reference across project) based on requirements (viz. Browser Type, Wait type, etc.)    
@@ -44,7 +44,7 @@ This framework is built using all the latest and most popular libraries and with
 2. Execute feature files independently.
 
 ## To DO
-[] Extent Reports integration.
-[] TestNG parallel execution.
-[] Log4j implementation.
+[] Extent Reports integration.  
+[] TestNG parallel execution.   
+[] Log4j implementation.    
     
