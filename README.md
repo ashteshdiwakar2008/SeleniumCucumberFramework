@@ -19,25 +19,25 @@ This framework is built using all the latest and most popular libraries and with
 
 ## Package structure overview: 
 1. **src/main/java: **  
-    - [] com.assertions : Contains a class where all common validation steps can be maintained which will be reflected in reports as well. 
-    - [ ] com.constants : Contains a class which can be used to store framework level constant variables for referencing across various levels (viz, wait timeouts, etc).   
-    - [ ] com.drivers : Contains classes to manage Web Driver instance and implementation for handling remote execution, parallel execution of tests for WebDriver reference.   
-    - [ ] com.enums : Conatains various enums (For static value reference across project) based on requirements (viz. Browser Type, Wait type, etc.)    
-    - [ ] com.pages : Contains class for each page on the web app and a Base Class for all page actions method references.  
-    - [ ] com.reports : Contains class for custom Extent Report configurations. 
-    - [ ] com.utilities : Contains calsses for various utility (viz. Reading Property Files data, Excel Utils, Screenshot Utils, etc.)  
+    -  com.assertions : Contains a class where all common validation steps can be maintained which will be reflected in reports as well. 
+    -  com.constants : Contains a class which can be used to store framework level constant variables for referencing across various levels (viz, wait timeouts, etc).   
+    -  com.drivers : Contains classes to manage Web Driver instance and implementation for handling remote execution, parallel execution of tests for WebDriver reference.   
+    -  com.enums : Conatains various enums (For static value reference across project) based on requirements (viz. Browser Type, Wait type, etc.)    
+    -  com.pages : Contains class for each page on the web app and a Base Class for all page actions method references.  
+    -  com.reports : Contains class for custom Extent Report configurations. 
+    -  com.utilities : Contains calsses for various utility (viz. Reading Property Files data, Excel Utils, Screenshot Utils, etc.)  
     
 2. **src/main/resources:**  
-    - [ ] data : stores test data in excel sheets/json format 
-    - [ ] config.properties : Contains project level configurations (viz. url, capture screenshot requests, browser details, etc.)    
+    -  data : stores test data in excel sheets/json format 
+    -  config.properties : Contains project level configurations (viz. url, capture screenshot requests, browser details, etc.)    
     
 3. **src/test/java:**    
-    - [ ] com.hooks : Contains a class to manage application hooks i.e steps to be executed before scenario execution.  
-    - [ ] com.runners : Contains class to manage test runners for various scenario based execution. 
-    - [ ] com.stepdefinitions : Contains class to manage all steps as per page levels and feature file definitions. 
+    -  com.hooks : Contains a class to manage application hooks i.e steps to be executed before scenario execution.  
+    -  com.runners : Contains class to manage test runners for various scenario based execution. 
+    -  com.stepdefinitions : Contains class to manage all steps as per page levels and feature file definitions. 
     
 4. **src/test/resources:**    
-    - [ ] features : Contains feature files per page or feature basis.
+    -  features : Contains feature files per page or feature basis.
     
 ## How to execute the scenarios or features
 1. Execute Runner files independently.
